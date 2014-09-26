@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="myStruts2" namespace="/" extends="struts-default">
+        <action name="login" class="LoginAction"><!--登录功能对应的action-->
+            <result name="success">/success.jsp</result>
+            <result name="fail">/verifyLogin.jsp</result>
+        </action>
+        <action name="register" class="RegisterAction"><!--注册功能对应的action-->
+            <result name="success">/success.jsp</result>
+            <result name="fail">/verifyRegister.jsp</result>
+        </action>
+    </package>
+</struts>
